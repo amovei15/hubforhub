@@ -28,7 +28,7 @@ a:hover{color:var(--indigo-3)}
    iOS Safari backdrop-filter is unreliable and a transform on the sticky
    element itself breaks pinning — both made the mobile header bleed through
    and read as "not fixed". Solid bg is the network standard. */
-.nav{position:sticky;top:0;z-index:100;background:var(--bg);
+.nav{position:-webkit-sticky;position:sticky;top:0;z-index:1000;background:var(--bg);
   border-bottom:1px solid var(--line-soft)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;
   max-width:var(--max);margin:0 auto;padding:14px 24px;gap:20px}
